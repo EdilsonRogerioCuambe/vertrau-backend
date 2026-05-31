@@ -1,0 +1,38 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.vs/
+.vs/
+*.nupkg
+*.snupkg
+*.DotSettings.user
+TestResults/
+*.trx
+*.coveragexml
+
+VertrauApi/bin
+VertrauApi/obj
+
+## Secrets & Config
+appsettings.Development.json
+*.pfx
+*.p12
+
+## Docker
+docker-compose.override.yml
+
+## Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Node (husky/commitlint)
+node_modules/
+npm-debug.log*

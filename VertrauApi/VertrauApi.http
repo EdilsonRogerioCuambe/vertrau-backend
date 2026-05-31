@@ -1,0 +1,6 @@
+@VertrauApi_HostAddress = http://localhost:5260
+
+GET {{VertrauApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
