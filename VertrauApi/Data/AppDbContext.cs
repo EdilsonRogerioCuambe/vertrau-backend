@@ -5,6 +5,12 @@ namespace VertrauApi.Data;
 
 public class AppDbContext : DbContext
 {
+    static AppDbContext()
+    {
+        // Permite enviar DateTime com Kind=Unspecified ao PostgreSQL tratando como UTC
+        AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+    }
+
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     public DbSet<Usuario> Usuarios { get; set; }
